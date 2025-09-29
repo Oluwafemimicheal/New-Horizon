@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project | Home page</title>
+
+    <!-- CSS style links connection -->
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+  </head>
+
+  <body>
+    <header class="h-[80px] bg-white border-b-2 border-gray-100 py-3 lg:py-5">
+      <nav
+        class="px-5 lg:p-0 lg:w-[1200px] lg:mx-auto flex items-center justify-between"
+      >
+        <div class="flex items-center gap-5">
+          <div>
+            <h1 class="font-bold lg:text-3xl">Roofly</h1>
+          </div>
+          <div class="hidden lg:flex items-center border-l-2 border-black pl-5">
+            <ul class="flex gap-6 lg:text-[16px] text-gray-700">
+              <li class="hover:text-gray-400"><a href="#">Properties</a></li>
+              <li class="hover:text-gray-400">
+                <a href="./projects.html">Off-Plain</a>
+              </li>
+              <li class="hover:text-gray-400">
+                <a href="./projects.html">Companies</a>
+              </li>
+              <li class="hover:text-gray-400">
+                <a href="./projects.html">Find an Agent</a>
+              </li>
+              <li class="hover:text-gray-400">
+                <a href="./projects.html">About Us</a>
+              </li>
+              <li class="hover:text-gray-400">
+                <a href="./projects.html">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex items-center gap-5 lg:gap-24">
+          <div class="hidden lg:block">
+            <button
+              class="py-2 px-4 bg-yellow-300 hover:bg-yellow-200 active:bg-yellow-300 transition rounded"
+            >
+              Add Property &#10138;
+            </button>
+          </div>
+          <div class="flex gap-3 lg:gap-6">
+            <button
+              class="px-2 py-1 lg:py-1 lg:px-4 border-2 text-sm lg:text-lg border-transparent bg-gray-100 hover:border-gray-100 hover:bg-transparent rounded"
+            >
+              Login
+            </button>
+            <button
+              class="px-2 py-1 lg:py-1 lg:px-4text-sm lg:text-lg border-2 border-gray-100 hover:bg-gray-100 rounded"
+            >
+              Sign up
+            </button>
+          </div>
+          <div class="lg:hidden block">
+            <button class="text-2xl">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero section -->
+      <section
+        id="hero-section"
+        class="hero h-[calc(80px - 100vh) flex justify-between items-center flex-col"
+      >
+        <div
+          class="w-full px-10 lg:p-0 mt-[100px] lg:w-[1200px] mx-auto flex flex-col justify-center items-center gap-10"
+        >
+          <h1 class="text-4xl text-center lg:text-4xl text-gray-400 font-bold">
+            Explore Your <span class="text-black">Home Dream</span>
+          </h1>
+          <div class="flex justify-between items-center gap-5">
+            <form class="hidden lg:flex gap-5">
+              <select
+                name="property"
+                id="property"
+                class="block w-full px-3 py-2 border border-gray-300 rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              >
+                <optgroup>
+                  <option value="">Property Type</option>
+                  <option value="residential">Residential property</option>
+                  <option value="commercial">Commercial property</option>
+                  <option value="industrial">Industrial property</option>
+                  <option value="land">Land</option>
+                </optgroup>
+              </select>
+              <select
+                name="location"
+                id="location"
+                class="block w-full px-3 py-2 border border-gray-300 rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              >
+                <optgroup>
+                  <option value="">Location</option>
+                  <option value="usa">Anytown, USA 12345</option>
+                  <option value="uk">Wimbledon, London SW19 5DX</option>
+                  <option value="nigeria">Effurun De 330102 Uvwie NGA</option>
+                  <option value="nigeria">
+                    A3/11 Bungalow P.T.I Staff Quarters
+                  </option>
+                </optgroup>
+              </select>
+              <select
+                name="price"
+                id="price"
+                class="block w-full px-3 py-2 border border-gray-300 rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              >
+                <optgroup>
+                  <option value="">Price</option>
+                  <option value="usa">&#36;3000.00</option>
+                  <option value="uk">&#36;3500.00</option>
+                  <option value="nigeria">&#36;2000.00</option>
+                  <option value="nigeria">&#36;4000.00</option>
+                </optgroup>
+              </select>
+            </form>
+            <div class="flex gap-5">
+              <button
+                class="px-2 py-1 lg:py-2 lg:px-4 text-sm lg:text-lg bg-gray-300 hover:bg-gray-300 rounded"
+              >
+                Advance
+              </button>
+              <button
+                class="px-2 py-1 lg:py-2 lg:px-4 text-sm lg:text-lg text-black bg-yellow-300 transition hover:bg-yellow-300/70 rounded"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i> Search
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 mt-[50px] h-[400px] w-full">
+          <div
+            class="hidden lg:block bg-[url(./public/assest/image/hero-apartment-1.jpg)] bg-no-repeat bg-cover bg-center w-full reletive p-10"
+          >
+            <div class="h-full flex justify-between items-end mb-[20px] w-full">
+              <span class="bg-white p-3 rounded">Newport Beach</span>
+              <span
+                class="flex justify-center items-center bg-white w-[50px] h-[50px] p-2 rounded-full"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></span>
+            </div>
+          </div>
+          <div
+            class="bg-[url(./public/assest/image/hero-apartment-2.jpg)] bg-no-repeat bg-cover bg-center w-full reletive p-10"
+          >
+            <div class="h-full flex justify-between items-end mb-[20px] w-full">
+              <span class="bg-white p-3 rounded">Palm Springs</span>
+              <span
+                class="flex justify-center items-center bg-white w-[50px] h-[50px] p-2 rounded-full"
+                ><i class="fa-solid fa-chevron-right"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Feature section -->
+      <section id="fearture-section">
+        <div class="hero w-full px-10 lg:w-[1200px] mx-auto py-20">
+          <header>
+            <h1
+              class="text-2xl text-center lg:text-3xl text-gray-400 font-bold"
+            >
+              Feature <span class="text-black">Property</span>
+            </h1>
+          </header>
+          <div class="responsive grid lg:grid-cols-3 gap-10 my-10">
+            <article class="flex flex-col gap-2 shadow-sm hover:shadow-lg">
+              <div>
+                <img src="./public/assest/image/hero-apartment-2.jpg" alt="" />
+              </div>
+              <div class="p-5 flex flex-col gap-3">
+                <h3 class="font-bold text-gray-500">Spring Palm</h3>
+                <small
+                  ><i
+                    class="fa-solid fa-location-dot text-lg text-yellow-500"
+                  ></i>
+                  Wimbledon, London
+                </small>
+                <p class="text-[14px] text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Nihil inventore deserunt iusto reiciendis aliquid fugiat
+                  exercitationem,
+                </p>
+                <h3 class="font-bold text-[20px] text-yellow-500">
+                  &#36;3,000.00
+                </h3>
+              </div>
+            </article>
+            <article class="flex flex-col gap-2 shadow-sm hover:shadow-lg">
+              <div>
+                <img src="./public/assest/image/hero-apartment-1.jpg" alt="" />
+              </div>
+              <div class="p-5 flex flex-col gap-3">
+                <h3 class="font-bold text-gray-500">Spring Palm</h3>
+                <small
+                  ><i
+                    class="fa-solid fa-location-dot text-lg text-yellow-500"
+                  ></i>
+                  Wimbledon, London
+                </small>
+                <p class="text-[14px] text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Nihil inventore deserunt iusto reiciendis aliquid fugiat
+                  exercitationem,
+                </p>
+                <h3 class="font-bold text-[20px] text-yellow-500">
+                  &#36;3,000.00
+                </h3>
+              </div>
+            </article>
+            <article class="flex flex-col gap-2 shadow-sm hover:shadow-lg">
+              <div>
+                <img src="./public/assest/image/hero-apartment-2.jpg" alt="" />
+              </div>
+              <div class="p-5 flex flex-col gap-3">
+                <h3 class="font-bold text-gray-500">Spring Palm</h3>
+                <small
+                  ><i
+                    class="fa-solid fa-location-dot text-lg text-yellow-500"
+                  ></i>
+                  Wimbledon, London
+                </small>
+                <p class="text-[14px] text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Nihil inventore deserunt iusto reiciendis aliquid fugiat
+                  exercitationem,
+                </p>
+                <h3 class="font-bold text-[20px] text-yellow-500">
+                  &#36;7,000.00
+                </h3>
+              </div>
+            </article>
+          </div>
+          <div class="text-center">
+            <button
+              class="px-2 py-1 lg:py-2 lg:px-4 text-sm lg:text-lg text-black bg-yellow-300 transition hover:bg-yellow-300/70 rounded"
+            >
+              Explore More
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Perfect Home section -->
+      <section id="perfect-home-section">
+        <div class="hero w-full px-10 lg:w-[1200px] mx-auto lg:py-20">
+          <header>
+            <h1 class="text-2xl text-center lg:text-3xl text-black font-bold">
+              Your Journey to the perfect <br />Home
+              <span class="text-gray-500">Start With Us</span>
+            </h1>
+            <p
+              class="lg:text-[16px] text-gray-500 text-center lg:w-[600px] mx-auto mt-2"
+            >
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Architecto, eveniet? Perferendis iusto eius facere alias illum
+              quidem ullam eaque dignissimos!
+            </p>
+          </header>
+          <div
+            class="h-[550px] mt-10 bg-[url(./public/assest/image/hero-apartment-1.jpg)] bg-no-repeat bg-cover bg-center rounded-md overflow-hidden"
+          >
+            <div
+              class="lg:clip-shape bg-black/50 w-full h-full p-5 flex justify-center items-end"
+            >
+              <div class="grid lg:grid-cols-3 gap-5">
+                <article class="p-3 bg-white rounded-md">
+                  <h2 class="font-bold text-2xl mb-3 text-yellow-500">1,500</h2>
+                  <p class="text-gray-500">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Incidunt vel fugit
+                  </p>
+                </article>
+                <article class="p-3 bg-white rounded-md">
+                  <h2 class="font-bold text-2xl mb-3 text-yellow-500">30+</h2>
+                  <p class="text-gray-500">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Incidunt vel fugit
+                  </p>
+                </article>
+                <article class="p-3 bg-white rounded-md">
+                  <h2 class="font-bold text-2xl mb-3 text-yellow-500">98%</h2>
+                  <p class="text-gray-500">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Incidunt vel fugit
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Testimony section -->
+      <section id="testimony-section">
+        <div class="hero w-full px-10 lg:w-[1200px] mx-auto lg:py-20 py-16">
+          <header>
+            <h1 class="text-2xl text-center lg:text-3xl text-black font-bold">
+              Here From Our Awesome<br />
+              <span class="text-gray-500">Starfield Client</span>
+            </h1>
+          </header>
+          <div class="grid lg:grid-cols-2 gap-5 mt-10">
+            <article class="text-center flex flex-col items-center gap-5 mt-5">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                hic dolore quibusdam omnis eos? Ullam cum iusto id, magni quia
+                officia facilis ipsa excepturi eos esse similique laudantium eum
+                explicabo.
+              </p>
+              <div class="flex items-center gap-5">
+                <div>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <h2 class="text-black font-bold text-1xl">
+                  50/<span class="text-gray-500">50</span>
+                </h2>
+              </div>
+              <div class="flex justify-start items-center gap-5">
+                <div
+                  class="w-[60px] h-[60px] rounded-full overflow-hidden bg-yellow-500 flex justify-center items-center"
+                >
+                  <img
+                    src="./public/assest//image//hero-apartment-2.jpg"
+                    alt="person"
+                  />
+                </div>
+                <div class="text-left">
+                  <h1 class="font-bold text-[21px]">Tinuola Imma</h1>
+                  <p class="text-gray-500 text-[14px]">
+                    Lorem ipsum dolor sit.
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="text-center flex flex-col items-center gap-5 mt-5">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                hic dolore quibusdam omnis eos? Ullam cum iusto id, magni quia
+                officia facilis ipsa excepturi eos esse similique laudantium eum
+                explicabo.
+              </p>
+              <div class="flex items-center gap-5">
+                <div>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <h2 class="text-black font-bold text-1xl">
+                  50/<span class="text-gray-500">50</span>
+                </h2>
+              </div>
+              <div class="flex justify-start items-center gap-5">
+                <div
+                  class="w-[60px] h-[60px] rounded-full overflow-hidden bg-yellow-500 flex justify-center items-center"
+                >
+                  <img
+                    src="./public/assest//image//hero-apartment-2.jpg"
+                    alt="person"
+                  />
+                </div>
+                <div class="text-left">
+                  <h1 class="font-bold text-[21px]">Tinuola Imma</h1>
+                  <p class="text-gray-500 text-[14px]">
+                    Lorem ipsum dolor sit.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Make your Dream -->
+      <section id="make-your-dream-section" class="lg:py-20 py-10">
+        <div
+          class="hero h-[450px] w-full lg:w-[1200px] p-5 lg:p-20 mx-auto mt-10 bg-yellow-500 bg-no-repeat bg-cover bg-center rounded-md overflow-hidden"
+        >
+          <div
+            class="w-full h-full lg:w-[600px] flex flex-col justify-center items-start gap-5"
+          >
+            <h1 class="text-4xl lg:text-5xl text-white font-bold">
+              Make Your Dream <br />
+              Space a Reality
+            </h1>
+            <p class="text-gray-100 text-[18px]">
+              Lorem ipsum dolor amet consectetur adipisicing elit. Magni nam
+              dignissimos soluta quasi veniam, libero voluptates repellat
+              provident perspiciatis eius?
+            </p>
+            <button
+              class="py-2 px-4 bg-white hover:bg-yellow-200 active:bg-white/100 hover:shadow-lg transition rounded"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div
+        class="hero w-full text-center px-10 lg:w-[1200px] h-[100px] mx-auto"
+      >
+        Roofly&copy; 2025, Right Developed by Oluwafemi Michael 😁.
+      </div>
+    </footer>
+
+    <!-- JavaScript script connection -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./public/js/index.js"></script>
+  </body>
+</html>
