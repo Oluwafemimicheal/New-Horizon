@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roofly | Login</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main
+      class="h-[100vh] flex justify-center items-center w-[800px] mx-auto overflow-hidden"
+    >
+      <div
+        class="w-full lg:flex justify-center items-center h-[500px] rounded-lg overflow-hidden shadow-lg"
+      >
+        <div
+          class="hidden bg-[url(./public/assest/image/login-iage.jpg)] bg-no-repeat bg-cover bg-center lg:block w-full h-full"
+        ></div>
+
+        <div class="w-full h-[100vh] flex justify-center items-center flex-col">
+          <div class="w-[400px] p-10 rounded-md bg-white">
+            <div class="text-center mb-8">
+              <h1 class="font-bold text-2xl text-black">
+                Roofly |
+                <span class="text-yellow-500 font-semibold">Login</span>
+              </h1>
+            </div>
+            <form action="#">
+              <div
+                class="flex p-2 bg-white border-2 border-gray-300 hover:shadow-lg shadow-sm rounded-md mb-5"
+              >
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="bg-transparent flex-grow outline-none"
+                />
+                <span>
+                  <i class="fa-regular fa-envelope"></i>
+                </span>
+              </div>
+              <div
+                class="flex p-2 bg-white border-2 border-gray-300 hover:shadow-lg shadow-sm rounded-md mb-5"
+              >
+                <input
+                  type="password"
+                  placeholder="Password"
+                  class="bg-transparent flex-grow outline-none"
+                />
+                <span>
+                  <i class="fa-solid fa-lock"></i>
+                </span>
+              </div>
+              <div class="flex justify-between items-center -mt-3 mb-6">
+                <small class="flex justify-center items-center gap-1"
+                  >Remember me <input type="checkbox"
+                /></small>
+                <a href="#" class="text-sm text-yellow-500">Forget Password</a>
+              </div>
+              <div>
+                <button
+                  class="p-2 text-white bg-yellow-500 hover:bg-yellow-400 rounded-md w-full"
+                >
+                  Login
+                </button>
+              </div>
+              <div class="mt-5">
+                <button
+                  class="flex justify-center items-center gap-2 p-1 text-gray-700 border-2 border-yellow-500 hover:opacity-90 rounded-md w-full"
+                >
+                  <img
+                    width="30"
+                    height="30"
+                    src="https://img.icons8.com/color/48/google-logo.png"
+                    alt="google-logo"
+                  />
+                  Google
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="mt-5 text-center">
+            <small
+              >Don't have an account yet?
+              <a href="#" class="text-yellow-500">Sign Up</a></small
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
